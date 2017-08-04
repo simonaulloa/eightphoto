@@ -21,12 +21,16 @@ gulp.task('style', function(){
 
 gulp.task('webserver', function(){
 	gulp.src('../eightphoto/')
-		.pipe(webserver({
-			fallback: 'index.html',
-			livereload: true,
-			directoryListing: false,
-			open: true
-		}));	
+	.pipe(webserver({
+		fallback: 'index.html',
+		livereload: true,
+		directoryListing: false,
+		open: true
+	}));	
 });
 
-gulp.task('default', ['script', 'style', 'webserver']);
+gulp.task('watch', function(){
+    gulp.watch('assets/sass/*.scss',['style']);
+});
+
+gulp.task('default', ['script', 'style', 'webserver', 'watch']);

@@ -1,0 +1,21 @@
+.container-blog{
+	background-color:red;
+}
+
+.photo{
+	container-fluid{
+		background-color:red;
+	}
+}
+
+
+.blog{
+	background-color: black;
+	background: cover;
+	background-repeat: no-repeat;
+	height: 100px;
+	.titulo{
+	 text-align: center;
+	 color: $blanco;
+	}
+}

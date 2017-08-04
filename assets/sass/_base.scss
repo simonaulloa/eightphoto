@@ -1,12 +1,59 @@
-body{
+*{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	text-align: center;
 }
-menu{
-color: $negro;	
-	container{
-		{
-		}
+
+img{
+	width: $img;
+}
+.services{
+	background-color: $gris-claro;
+}
+
+
+.btn-sm{
+	border-radius: 30px;
+    background-color: $verde;
+    border: none;
+    color: $blanco;
+    width: 150px;
+    height: 45px;
+}
+.btn-sm:hover{
+	border-radius: 30px;
+	border: 2px solid $verde;
+    background-color: transparent;
+    color: $verde;
+    width: 150px;
+    height: 45px;
+}
+
+.photo{
+	padding:200px;
+	background-image: url('../img/cta-bg-1.jpg');
+}
+
+
+.blog{
+	background-image: url('../img/news-bg.jpg');
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-image: 100%;
+
+	h1{
+		color:white;
+	}
+	.im-blog{
+		padding: 15px;
 	}
 }
+
+.no-margin{
+	.marg{
+		padding:0;
+	}
+}
+
